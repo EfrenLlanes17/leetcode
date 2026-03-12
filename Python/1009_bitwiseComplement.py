@@ -9,7 +9,7 @@ class Solution(object):
                 count+=num
             else:
                 n -= num
-            num/=2
+            num//=2
         return count
 
         
