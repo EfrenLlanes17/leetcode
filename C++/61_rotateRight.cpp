@@ -21,8 +21,8 @@ public:
             len++;
         }
         curr->next = head;
-        int rotations = k % len;
-        len-=rotations;
+        k %= len;
+        len-=k;
         curr = head;
         while(len!=1){
             curr = curr->next;
